@@ -2,11 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+before start install the packages with
+
+### `npm i`
+
+to start local database with json-server run this command on another terminal inside the project directory.
+
+### `npx json-server --watch --port 8000 data/db.json` or `yarn json-server --watch --port 8000 data/db.json`
+
 ## Available Scripts
 
-In the project directory, you can run:
+Then in the project directory, you can run:
 
-### `npm start`
+### `npm start` or `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
