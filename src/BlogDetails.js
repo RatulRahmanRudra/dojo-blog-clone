@@ -9,7 +9,10 @@ const BlogDetails = () => {
   );
   const history = useHistory();
   const handleDelete = async () => {
-    window.confirm("the post will be deleted, are you sure?");
+    const deleteConfirmed = window.confirm(
+      "the post will be deleted, are you sure?"
+    );
+    if (!deleteConfirmed) return;
     try {
       await fetch(`http://localhost:8000/blogs/${blog.id}`, {
         method: "DELETE",
